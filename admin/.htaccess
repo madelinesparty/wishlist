@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "MP Wishlist"
+AuthUserFile passfile
+Require valid-user
+
