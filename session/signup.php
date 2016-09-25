@@ -122,10 +122,9 @@ function send_confirmation_email($to)
 Thank you for participating in Madeline's Party. Each gift that you
 purchase helps a family in need.
 
-You can now view and claim gifts that you have purchased from the
-wish list from any browser, including your mobile phone, by going to
-http://madelinesparty.com/list.php and entering the e-mail address.
-where this confirmation was received.
+You can view and claim gifts from the wish list from any browser, including
+your mobile phone, by going to https://madelinesparty.com/wishlist and
+entering your e-mail address.
 CONFIRMATION_EMAIL_CONTENT;
   $headers = "From: $from\r\n";
 

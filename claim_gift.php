@@ -65,6 +65,8 @@ Madeline's Party.
   Description: {$item_info['description']}
 
 Thanks again, and we'll see you at Madeline's Party!
+
+Event details: https://madelinesparty.com/event-information/
 CONFIRMATION_EMAIL_CONTENT;
 $headers = "From: $from\r\n";
 
