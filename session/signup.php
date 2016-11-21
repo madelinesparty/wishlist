@@ -78,7 +78,6 @@ if (isset($_POST['signup']))
       else
       {
         $userid = $mp_db->lastInsertId();
-        echo $userid;
 
         // Set the user session and remember cookie
         set_login_state(array('id'=>$userid,'remember'=>$remember_token));
