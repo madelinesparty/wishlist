@@ -34,7 +34,7 @@ include "common/common_top.php"
 <!-- Jumbotron -->
 <div class="page-header">
   <h1>Madeline's Party</h1>
-  <h2>Celebrating 20 Years of Service</h2>
+  <h2>Celebrating Over 20 Years of Service</h2>
 </div>
 
 <?php login_display($mp_db) ?>

@@ -16,6 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 require_once 'dbconnect.php';
+require_once 'settings.php';
 
 /*
  * $_SESSION['userid'] is the index of the user record of the logged in user, if
@@ -84,10 +85,21 @@ function login_display()
 
   if ($mp_current_user )
   {
+    $event_title = setting_get('EVENT_TITLE', "Madeline&apos;s Party");
+    $event_datetime = setting_get('EVENT_DATETIME', 'Date TBD');
+    $event_location = setting_get('EVENT_LOCATION', 'Location TBD');
+    $event_address = setting_get('EVENT_ADDRESS', 'Address TBD');
+
     echo <<<LOGGED_IN
     <div id="login_panel" class="panel panel-default">
       <div class="panel-body">
         You are logged in as {$mp_current_user['email']}. If this isn't you, <a href="session/handle_login.php">click here</a>.
+      </div>
+      <div class="panel-body" style="text-align: center;">
+        <b>{$event_title}</b><br />
+        {$event_datetime}<br />
+        {$event_location}<br />
+        {$event_address}<br />
       </div>
     </div>
 LOGGED_IN;

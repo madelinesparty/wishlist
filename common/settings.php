@@ -55,6 +55,8 @@ function setting_set($name, $value, $allow_update = false)
 {
   global $mp_db;
 
+  $value = htmlentities(stripslashes($value), ENT_QUOTES|ENT_HTML5, "UTF-8");
+
   if (setting_exists($name))
   {
     if ($allow_update)

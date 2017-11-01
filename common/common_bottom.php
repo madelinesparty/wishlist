@@ -18,7 +18,7 @@
 ?>
       <footer class="site-footer" role="contentinfo">
 			  <div class="site-info">
-					Copyright© 2016 <em>Madeline's Party</em>, a 501(c)3 non-profit organization
+					Copyright© 2017 <em>Madeline's Party</em>, a 501(c)3 non-profit organization
 			  </div><!-- .site-info -->
 		  </footer>
     </div> <!-- container -->
